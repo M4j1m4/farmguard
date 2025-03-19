@@ -1,0 +1,81 @@
+/* Center the form container */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Make the image much bigger */
+.img {
+    width: 300px; /* Increased image size */
+    height: auto;
+    margin-right: 130px;
+}
+
+/* Center label and input */
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 250px; /* Match button width */
+    margin-bottom: 10px;
+    margin-right: 200px;
+    margin-left:10px;
+}
+
+/* Align label */
+label {
+    font-size: 14px;
+    width: 80px; /* Fixed width for alignment */
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* Make input fields take up remaining space */
+input {
+    background: #E4E3E3;
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+/* Center and align the button */
+button {
+    width: 100%;
+    max-width: 200px; /* Match input width */
+    background-color: #18b818;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 300px;
+    margin-right: 150px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #444;
+    margin-top: 5px;
+    font-weight:bold;
+    margin-right:150px;
+}
+
+button:hover {
+    background-color: #16a116;
+}
