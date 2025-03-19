@@ -3,64 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FarmGuard</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>FarmGuard UI</title>
+    <link href="home.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/45ed1b1acf.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
-    <!-- Header -->
-    <header>
-        <img src="img/db1.png" alt="FarmGuard Logo" class="logo">
-        <i class="fas fa-cog settings-icon"></i>
-    </header>
-
-    <!-- Live Feed Section -->
-    <section class="live-feed">
-        <div class="feed-container">
-            <img src="img/farm-live.png" alt="Live Feed">
-            <p class="power-status">Windmill Power <i class="fas fa-battery-full"></i></p>
-            <p class="live-text">View Live Feed</p>
+    <div class="container">
+        <div class="top-bar">
+            <div class="center-content">
+                <img src="img/db1.png" alt="FarmGuard Icon">
+            </div>
+            <i class="fas fa-cog"></i>
         </div>
-    </section>
-
-    <!-- Control Buttons -->
-    <section class="controls">
-        <div class="button-grid">
-            <div class="control-button">
-                <i class="fas fa-eye"></i>
-                <p>Live View</p>
-            </div>
-            <div class="control-button">
-                <i class="fas fa-cogs"></i>
-                <p>System Status</p>
-            </div>
-            <div class="control-button">
-                <i class="fas fa-sliders-h"></i>
-                <p>Manual Control</p>
-            </div>
-            <div class="control-button">
-                <i class="fas fa-exclamation-triangle"></i>
-                <p>Settings & Alerts</p>
+        <div class="power-card">
+            <p><strong>Windmill Power</strong> <i class="fas fa-battery-full"></i></p>
+            <p><i class="fas fa-circle text-danger"></i> View Live Feed</p>
+        </div>
+        <div class="dashboard">
+            <div class="d-flex flex-wrap justify-content-center">
+                <button class="btn btn-success"><i class="fas fa-wifi"></i> Live View</button>
+                <button class="btn btn-success"><i class="fas fa-cogs"></i> System Status</button>
+                <button class="btn btn-success"><i class="fas fa-hand-point-up"></i> Manual Control</button>
+                <button class="btn btn-success"><i class="fas fa-exclamation-triangle"></i> Settings & Alerts</button>
             </div>
         </div>
-    </section>
-
-    <!-- Bottom Navigation -->
-    <nav class="bottom-nav">
-        <div class="nav-item active">
-            <i class="fas fa-home"></i>
-            <p>Home</p>
+        <div class="bottom-nav">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-bell"></i></a>
+            <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
         </div>
-        <div class="nav-item">
-            <i class="fas fa-bell"></i>
-            <p>Alerts</p>
-        </div>
-        <div class="nav-item">
-            <i class="fas fa-sync"></i>
-            <p>Updates</p>
-        </div>
-    </nav>
-
+    </div>
 </body>
 </html>

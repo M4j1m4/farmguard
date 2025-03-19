@@ -4,40 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FarmGuard - Live Feed</title>
+    <link href="map.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header Section -->
     <div class="header">
-        <div class="logo">
-            <img src="img/db1.png" alt="FarmGuard Logo">
-        </div>
+        <img src="img/db1.png" alt="FarmGuard Logo" class="logo">
         <i class="fas fa-cog settings-icon"></i>
     </div>
 
-    <!-- Live Camera Feed Section -->
-    <div class="live-feed-container">
-        <a href="#" class="back-button"><i class="fas fa-arrow-left"></i> Back</a>
-        <div class="live-text"><span class="red-dot">●</span> Live Camera Feed</div>
-        <img src="live-feed.jpg" alt="Live Camera Feed" class="live-feed">
-    </div>
+    <!-- Back Button -->
+    <a href="#" class="back-button"><i class="fas fa-arrow-left"></i> Back</a>
 
-    <!-- Radar Detection Map -->
-    <div class="radar-map">
-        Radar Detection Map
-    </div>
+    <!-- Live Camera Feed -->
+    <div class="content-container">
+        <div class="live-feed-container">
+            <p class="live-text"><span class="red-dot">●</span> Live Camera Feed</p>
+            <img src="live-feed.jpg" alt="Live Camera Feed" class="live-feed">
+        </div>
 
-    <!-- Action Button -->
-    <button class="action-button">Action</button>
+        <!-- Radar Detection Map -->
+        <div class="radar-map">
+            <p>Radar Detection Map</p>
+        </div>
 
-    <!-- Bottom Navigation -->
-    <div class="bottom-nav">
-        <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
-        <a href="#"><i class="fas fa-bell"></i> Alerts</a>
-        <a href="#"><i class="fas fa-sync-alt"></i> Sync</a>
-        <a href="#"><i class="fas fa-user"></i> Profile</a>
-    </div>
-
-</body>
-</html>
+        <!-- Action Button -->
+        <button class="action-button">Action</button

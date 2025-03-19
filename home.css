@@ -1,169 +1,76 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
 body {
-    background: #f8f8f8;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+.top-bar {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100vh;
-}
-
-/* Header */
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-    max-width: 400px;
-    padding: 5px;
-    /* settings */
-
-position: absolute;
-width: 37px;
-height: 35px;
-left: 329px;
-top: 32px;
-}
-
-.logo {
-    height: 25px;
-}
-
-.settings-icon {
-    font-size: 18px;
-    cursor: pointer;
-    margin-top: 5px;
-}
-
-/* Live Feed Section */
-.live-feed {
-    width: 90%;
-    max-width: 400px;
-    margin-top: 10px;
-}
-
-.feed-container {
-    background: white;
-    border-radius: 20px;
-    padding: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-}
-
-.feed-container img {
-    width: 100%;
-    border-radius: 15px;
-    object-fit: cover;
-}
-
-.power-status {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    font-size: 12px;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 5px 10px;
-    border-radius: 12px;
-    font-weight: bold;
-}
-
-.live-text {
-    position: absolute;
-    bottom: 8px;
-    left: 10px;
-    font-weight: bold;
-    font-size: 14px;
-    color: black;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 5px 10px;
-    border-radius: 12px;
-}
-
-/* Controls Section */
-.controls {
-    width: 90%;
-    max-width: 400px;
-    margin-top: 20px;
-    background: white;
+    justify-content: space-between;
     padding: 15px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: white;
+}
+
+.top-bar .center-content {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.button-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    width: 100%;
+.top-bar img {
+    width: 100px; /* Adjust icon size */
+    height: 30px;
+    margin-right: 10px; /* Space between icon and text */
 }
 
-.control-button {
-    background: #18b818;
-    color: white;
+.power-card {
+    background: url('images/livefeed.png') no-repeat center center;
+    background-size: cover;
+    padding: 15px;
+    margin-top: 40vw;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    color: black; /* Ensures text is visible on the image */
+}
+.dashboard {
+    background: rgb(226, 219, 219);
+    border-radius: 15px;
     padding: 20px;
-    border-radius: 20px;
+    margin-top: 40vw;
+    text-align: center;
+}
+.dashboard .btn {
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.image-holder {    
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 50%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    margin: 20px auto;
 }
-
-.control-button:hover {
-    background: #16a116;
-    transform: scale(1.05);
-}
-
-.control-button i {
-    font-size: 30px;
-    margin-bottom: 8px;
-}
-
-/* Bottom Navigation */
 .bottom-nav {
+    background: white;
     position: fixed;
     bottom: 0;
     width: 100%;
-    max-width: 400px;
-    background: white;
     display: flex;
     justify-content: space-around;
     padding: 10px 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid #ccc;
 }
-
-.nav-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 12px;
-    cursor: pointer;
-    color: gray;
-    transition: 0.3s;
-}
-
-.nav-item i {
-    font-size: 18px;
-    margin-bottom: 3px;
-}
-
-.nav-item.active {
+.bottom-nav a {
+    text-decoration: none;
     color: black;
+    font-size: 18px;
 }
